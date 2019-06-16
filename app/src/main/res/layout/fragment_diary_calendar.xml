@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp">
+
+    <FrameLayout
+        android:id="@+id/layout_diary_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_marginLeft="10dp"
+        android:alpha="0.6"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true">
+
+    </FrameLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout_diary_calendar_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_diary_calendar"
+        android:minHeight="60dp">
+
+        <ImageView
+            android:id="@+id/iv_diary_calendar_arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_arrow_up" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_diary_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/layout_diary_calendar_arrow"
+        android:visibility="gone" />
+
+</RelativeLayout>
